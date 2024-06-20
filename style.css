@@ -1,0 +1,87 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url(back.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+    padding: 60px;
+    background-color: #ccc;
+    border-radius: 20px;
+}
+
+.scoreboard {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    cursor: pointer;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+}
+
+.cell.winning-cell {
+    background-color: #90EE90; 
+}
+
+.strike {
+    position: absolute;
+    height: 10px;
+    background-color: red;
+    z-index: 1;
+    transform-origin: center;
+}
+
+.x-marker {
+    color: #FF4500; 
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+#round{
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.o-marker {
+    color: #1E90FF; 
+    font-weight: bold;
+    font-size: 3rem;
+    
+}
+
+#restart{
+    margin-right: 1rem;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 25px ;
+    cursor: pointer;
+}
